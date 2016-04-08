@@ -32,11 +32,8 @@ class Index extends \Magento\Backend\App\Action
     public function execute()
     {
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
-        echo "here\n";
         $resultPage = $this->resultPageFactory->create();
-        echo "here1\n";
         $resultPage->setActiveMenu('Techlogix_Blog::post');
-        echo "here2\n";
         $resultPage->addBreadcrumb(__('Blog Posts'), __('Blog Posts'));
         $resultPage->addBreadcrumb(__('Manage Blog Posts'), __('Manage Blog Posts'));
         $resultPage->getConfig()->getTitle()->prepend(__('Blog Posts'));
