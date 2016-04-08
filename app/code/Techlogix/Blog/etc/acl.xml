@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--  blog belongs under the Magento_Backend::content in our menu, we need to embed our resources within there. Then 
+using the same resource identifiers we used in our menu.xml we can define the access. That will handle displaying/hiding 
+the links within the menu based on the users access rights -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::content">
+                    <resource id="Techlogix_Blog::blog_content" title="Blog" sortOrder="10" >
+                        <resource id="Techlogix_Blog::post" title="Blog Posts" sortOrder="40">
+                            <resource id="Techlogix_Blog::save" title="Save Blog Post" sortOrder="10" />
+                            <resource id="Techlogix_Blog::post_delete" title="Delete Blog Post" sortOrder="20" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
