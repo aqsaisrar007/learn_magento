@@ -1,18 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-
-	<!-- id - A unique id to give to the menu item. Namespace it with your module name to avoid conflicts.
-	*  title - The text you want displayed!
-	*  module - The module it belongs to
-	*  sortOrder - Ordering within the list of items
-	*  parent - The ability to specify what node this belongs to, or where to nest the menu item.
-	*  resource - This relates to our ACL. We’ll cover this next.
-	*  action - If you want your link to be clickable specify the path: i.e. blog/post (frontName/action)
-	-->
     <menu>
         <add id="Techlogix_Blog::blog_content" title="Blog" module="Techlogix_Blog" sortOrder="50" parent="Magento_Backend::content" resource="Techlogix_Blog::blog_content" />
         <add id="Techlogix_Blog::post" title="Posts" module="Techlogix_Blog" sortOrder="0" parent="Techlogix_Blog::blog_content" action="blog/post" resource="Techlogix_Blog::post"/>
     </menu>
 </config>
-
-<!--  to add blog admin pages to the ‘Content’ menu. -->
