@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+	<!-- we can create a head here to add css files -->
+    <body>
+        <referenceContainer name="content"> <!-- here the block is added to content container -->
+            <block class="Aqsa\Recipebox\Block\Recipebox" name="recipebox" template="recipebox.phtml">  <!-- this template will be rendered here -->
+            </block>
+        </referenceContainer>
+    </body>
+</page>
