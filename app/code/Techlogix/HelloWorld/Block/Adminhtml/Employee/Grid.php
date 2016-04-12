@@ -14,7 +14,7 @@ class Grid extends \Magento\Backend\Block\Widget\Grid\Container
         $this->buttonList->add(
             'employee_apply',
             [
-                'label' => __('Employee'),
+                'label' => __('Back'),
                 'onclick' => "location.href='" . $this->getUrl('Employee/*/applyEmployee') . "'",
                 'class' => 'apply'
             ]
