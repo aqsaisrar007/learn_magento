@@ -33,6 +33,9 @@ class Index extends \Magento\Backend\App\Action
     {
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
+        $resultPage->setActiveMenu('Aqsa_Recipebox::show');
+        $resultPage->addBreadcrumb(__('Recipebox'), __('Recipebox'));
+        $resultPage->addBreadcrumb(__('Recipebox'), __('Recipebox'));
         $resultPage->getConfig()->getTitle()->prepend(__('Recipebox Recipes'));
 
         return $resultPage;
